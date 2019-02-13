@@ -1,4 +1,4 @@
-# nuxt_playgrond
+# nuxt_playground
 
 > My funkadelic Nuxt.js project
 
