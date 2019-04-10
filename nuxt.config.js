@@ -1,6 +1,5 @@
 const pkg = require('./package')
 
-
 module.exports = {
   // mode: 'spa',
 
@@ -61,7 +60,12 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
-  }
+  },
+
+  // https://ja.nuxtjs.org/api/configuration-env/
+  env: {
+    baseUrl: process.env.NODE_ENV === 'production' ? "/np/" : "/",
+  },
 }
