@@ -60,7 +60,7 @@ else
       system "git clone #{fetch(:repo_url)} --branch #{fetch(:branch)} #{tmpdir}"
       within tmpdir do
         system "yarn"
-        system "yarn run build"
+        # system "yarn run build"
         system "yarn run generate"
         roles(:web).each do |e|
           system "rsync -au --delete -e ssh dist #{e.user}@#{e.hostname}:#{release_path}"

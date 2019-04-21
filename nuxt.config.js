@@ -65,7 +65,12 @@ module.exports = {
   },
 
   // https://ja.nuxtjs.org/api/configuration-env/
-  env: {
-    baseUrl: process.env.NODE_ENV === 'production' ? "/np/" : "/",
+  // env: {
+  //   baseUrl: process.env.NODE_ENV === 'production' ? "/np/" : "/",
+  // },
+
+  // https://ja.nuxtjs.org/api/configuration-router/
+  router: {
+    base: process.env.NODE_ENV === 'production' ? "/np/" : "/",
   },
 }
